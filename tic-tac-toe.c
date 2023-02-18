@@ -49,13 +49,12 @@ int main(){
         annouceWinner(winner);
 
         printf("\n Would you like to play again? (Y/N):");
-        scanf("%c"); // clearing buffer
+        getchar(); // clearing buffer
         scanf("%c", &response);
         response = toupper(response); // Also accept 'y' as response
     } while(response == 'Y');
 
-    printf("Thanks for playing!");
-    
+    printf("Thanks for playing!\n");
     return 0;
 }
 
